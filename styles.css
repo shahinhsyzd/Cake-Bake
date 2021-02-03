@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',
+    sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-show-color: #ffff00b4;
+    --main-background: #dddddd5b;
+    --main-text: #ffffff;
+}
+
+a {
+    text-decoration: none;
+       color: var(--main-text);
+}
+/* First Section */
+#showcase {
+    background-image: url("images/pexels-daria-shevtsova-1070880 (1).jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    color: var(--main-text);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9867297260701156) 0%, rgba(0, 0, 0, 0.8830882694874825) 27%, rgba(0, 0, 0, 0.6702031154258579) 50%, rgba(0, 0, 0, 0.5329482134650736) 77%, rgba(0, 0, 0, 0.373284347918855) 100%);
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    height: 12vh;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+.logo {
+    max-width: 60px;
+    height: auto;
+    cursor: pointer;
+}
+
+.menu {
+    max-width: 30px;
+    height: auto;
+    cursor: pointer;
+    position: fixed;
+    right: 50px;
+}
+.center-show {
+    position: relative;
+    z-index: 4;
+    height: 88vh;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-show h1 {
+    font-size: 5em;
+    font-weight: 700;
+    font-family: 'Merienda',
+    cursive;
+    text-align: center;
+}
+
+.center-show p {
+    line-height: 1.2em;
+    letter-spacing: 1.5px;
+    font-size: 0.8em;
+    font-style: italic;
+}
+.buttons {
+    margin-top: 40px;
+}
+.buttons a {
+    padding: 10px 30px;
+    background-color: var(--main-show-color);
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: 0 20px;
+}
+
+.buttons a:hover {
+    border: 1px solid var(--main-show-color);
+    background-color: transparent;
+    transition: 0.4s;
+}
+
+/* Second Section */
+
+#explanation {
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    color: #000;
+    padding-top: 50px;
+}
+.list-logo {
+    height: 20vh;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.logo2 {
+    width: 80px;
+    transition: 0.5s;
+}
+.logo2:hover {
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+.list-logo h1 {
+    padding: 20px;
+    font-size: 3em;
+    font-weight: 700;
+}
+.showcase2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding-top: 20px;
+}
+
+/* First Container */
+.main-explanation1{
+    flex-basis: 50%;
+}
+.main-explanation1 ul li {
+    list-style-type: none;
+    padding: 10px 100px 0 50px;
+}
+.main-explanation1 ul li:first-child{
+        padding-top: 0;
+}
+.main-explanation1 ul li h3 {
+    padding-top: 20px;
+    font-size: 2em;
+    font-weight: 500;
+}
+.main-explanation1 ul li h3:first-child{
+    padding-top: 0;
+}
+.main-explanation1 ul li p {
+    padding-top: 15px;
+    line-height: 1.2em;
+}
+/* Second Container */
+.main-explanation2 {
+    text-align: center;
+    flex-basis: 50%;
+}
+.main-explanation2 video {
+    height: 60vh;
+    width: auto;
+    border-radius: 10px;
+    border: 10px var(--main-show-color) solid;
+    padding: 5px;
+    margin: 50px;
+}
+
+/* Just think how can you make the whole website darken so you can watch the video */
+
+/* Section 3 */
+
+#showcase3 {
+    margin: auto;
+    min-height: 100vh;
+    width: 80%;
+    background-color: var(--main-background);
+    margin-top: 5%;
+}
+
+.best-products{
+    text-align: center;
+}
+.best-products h1 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: 600;
+    padding: 3%;
+}
+
+/* How to underline just one word */
+
+.best-products h1 span {
+    text-decoration: underline;
+}
+/* Learn how to make the grid responsive */
+.photo-collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    min-height: 80vh;
+    width: 80%;
+    margin: auto;
+    grid-gap: 20px;
+}
+
+.cards {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+/* Learn how to add overlays */
+.img1{
+    background-image: url("images/pexels-brigitte-tohm-239581 (1).jpg");
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.img2 {
+    background-image: url("images/pexels-cats-coming-1359330 (1).jpg");
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.img3 {
+    background-image: url("images/pexels-lisa-fotios-230325.jpg");
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.img4 {
+    background-image: url("images/pexels-moose-photos-1036621 (1).jpg");
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    height: 50vh;
+    width: 100%;
+    background-color: var(--main-background);
+}
+
+.visit {
+    height: 18%;
+}
+.visit h3 {
+    font-size: 2em;
+    padding-top: 2%;
+}
+.first-list li h5, .second-list li h5 {
+    font-size: 1.2em;
+    padding: 10px;
+}
+.details {
+    display: flex;
+    padding-top: 6%;
+    justify-content: space-around;
+    height: 70%;
+}
+
+.details li {
+    list-style-type: none;
+}
+.social-icons {
+    height: 10%;
+}
+.social-icons img {
+    width: 20px;
+    margin-right: 10px;
+    transition: 0.4s;
+}
+.social-icons img:hover {
+    transform: translateY(-10px);
+    transition: 0.4s;
+}
+@media (max-width: 1170px) {
+    .main-explanation1 ul li {
+        padding: 10px 0 0 0;
+    }
+}
+@media (max-width: 870px) {
+    .menu {
+        right: 30px;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    .buttons a {
+        margin-bottom: 20px;
+    }
+    .main-explanation1 ul li {
+        padding: 10px 0 0 0;
+    }
+}
+
+@media (max-width: 790px) {
+    .showcase2 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .list-logo h1 {
+        padding: 0;
+        font-size: 2em;
+    }
+    .main-explanation1 ul li p {
+        padding-top: 5px;
+        line-height: 1em;
+    }
+    .main-explanation1 ul li h3 {
+        padding-top: 10px;
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+    #explanation {
+        height: 100%;
+    }
+
+    .photo-collage {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        min-height: 80vh;
+        width: 60%;
+        margin: auto;
+        grid-gap: 20px;
+    }
+
+    /* Learn how to add overlays */
+
+    .img1 {
+        background-image: url("images/pexels-brigitte-tohm-239581 (1).jpg");
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .img2 {
+        background-image: url("images/pexels-cats-coming-1359330 (1).jpg");
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .img3 {
+        background-image: url("images/pexels-lisa-fotios-230325.jpg");
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .img4 {
+        background-image: url("images/pexels-moose-photos-1036621 (1).jpg");
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    
+}
+
+@media (max-width: 620px) {
+    .center-show h1 {
+        font-size: 4em;
+    }
+    .center-show {
+        text-align: center;
+    }
+    .visit h3 {
+        font-size: 1.4em;
+        padding-top: 3%;
+    }
+    .buttons {
+        margin-top: 20px;
+    }
+    .buttons a {
+        padding: 5px 20px;
+    }
+    .best-products h1 {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        font-weight: 600;
+        padding: 2%;
+    }
+    .details {
+        flex-direction: column;
+        justify-content: center;
+            padding-top: 3%;
+            justify-content: space-around;
+            height: 70%;
+    }
+    .main-explanation2 video {
+        height: 45vh;
+        width: auto;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .social-icons {
+        margin-top: 20px;
+    }
+}
